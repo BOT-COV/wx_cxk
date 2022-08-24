@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <title>无标题</title>
+    <style>
+    body{margin:0;width:100vw;height:100vh}
+    .video-box {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    .cover {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+    .video {
+      width: 100%;
+    }
+  }
+
+    </style>
+  </head> 
+  <body>
+  <div class="video-box">
+        <video
+          x5-video-player-type="h5"
+          x5-video-player-fullscreen="true"
+          webkit-playsinline
+          playsinline
+          preload
+          src="cxk.mp4"
+          ref="video"
+          class="video"
+          style="object-fit: fill;width:100vw;height:100vh"
+          x-webkit-airplay="true"
+          poster="wx.png"
+          loop
+          id="video"
+          onclick="this.play()"
+        ></video>
+        <div class="cover"></div>
+      </div>
+  </body>
+</html>
